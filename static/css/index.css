@@ -1,0 +1,63 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+body{
+    background: #933a29;
+    color: #ECBC2E;
+}
+.tooltip{
+    display:flex;
+    justify-content:space-around;
+}
+#rules{
+    width: 200px;
+}
+#toolBtn #reset{
+    background: url(../img/reset.png) no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ECBC2E;
+}
+#main{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.levelList{
+    display: table;
+}
+.levelbutton{
+    color: #e6a23c;
+    background: #fdf6ec;
+    border-color: #f5dab1;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #dcdfe6;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.currentlevel{
+    color: #fff;
+    background: #e6a23c;
+    border-color: #e6a23c;
+}
+.levelbutton:hover{
+    color: #fff;
+    background: #e6a23c;
+    border-color: #e6a23c;
+}

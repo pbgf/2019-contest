@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link href="./static/css/index.css" rel="stylesheet" type="text/css"/>
+	<title>推箱子</title>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <canvas id="mycanvas" width="800" height="800"></canvas>
+            <div class="levelList">
+                <!-- <input type="button" value="1" class="levelbutton">
+                <input type="button" value="2" class="levelbutton">
+                <input type="button" value="3" class="levelbutton"> -->
+            </div>
+        </div>
+        <div class="tooltip">
+            <div id="chooseLevels">
+                <div id="chooseLevelText">难度选择</div>
+                <div>
+                    <input type="radio" name="chooseLevel" value="5" class="chooseLevel" checked/>simple
+                    <input type="radio" name="chooseLevel" value="4" class="chooseLevel" >medium
+                    <input type="radio" name="chooseLevel" value="3" class="chooseLevel" >difficult
+                </div>
+            </div>
+            <div id="rules">
+                游戏规则：<br>
+                1、总共有5关，全部通过则胜利<br>
+                2、如果重玩次数超过5次，则游戏提前结束<br>
+                3、每提升一个难度，可重玩次数减一
+            </div>
+            <div id="toolBtn">
+                <a id="reset" href="#" onclick="restart()">重玩</a>
+            </div>
+        </div>
+    </div>
+    <script src='./static/js/map.js'></script>
+    <script src='./static/js/index.js'></script>
+</body>
+</html>
