@@ -64,7 +64,8 @@ function load(){
 //游戏初始化界面 鼠标移动和点击事件函数
 function mousemove(e){
     canvas.style.cursor="";
-    if(e.pageX>1050&&e.pageX<1160&&e.pageY>160&&e.pageY<180){
+    let x=e.pageX-canvas.offsetLeft,y=e.pageY-canvas.offsetTop;
+    if(x>495&&x<615&&y>150&&y<175){
         canvas.style.cursor="pointer";
     }
 }
